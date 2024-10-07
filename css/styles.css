@@ -1,0 +1,201 @@
+body {
+    background-color: rgb(220, 221, 221);
+}
+
+#wrapper {
+    max-width: 1660px;
+    margin: auto;
+    background-color: #fffffa;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr .5fr .5fr;
+}
+
+#wrapper section {
+    padding: 5%;
+}
+
+h1 {
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    font-size: 2em;
+}
+
+.horizontal {
+    text-align: left;
+}
+
+p {
+    color: white;
+    font-family: Arial;
+    text-align: left;
+    font-size: 1em;
+}
+
+.main {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+}
+
+.imageh {
+    width: 20%
+}
+
+.imageh>img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.imagev {
+    width: 90%
+}
+
+.imagev>img {
+    object-fit: contain;
+    width: 100%;
+}
+
+#A {
+    grid-column: 1 / span 2;
+    background-image: linear-gradient(#6BBFA7, #3d806d);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tom {
+    align-self: center;
+    padding-left: 30px;
+    width: 80%;
+}
+
+.imageleft {
+    padding-right: 10px;
+    align-self: center;
+    width: 40%;
+}
+
+#B {
+    grid-column: 3;
+    background-image: url(../images/pattern.jpg);
+    display: flex;
+}
+
+.centertext {
+    align-self: center;
+}
+
+.b {
+    text-align: center;
+}
+
+#C {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    background-image: linear-gradient(#c48d3f, #886332);
+    display: flex;
+}
+
+.centerimage {
+    align-self: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.verticalcenter {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#D {
+    background-image: url(../images/leaf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #DAEEED;
+    background-size: contain;
+}
+
+#E {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    background-image: url(../images/background.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+#F {
+    grid-column: 1;
+    grid-row: 3 / span 2;
+    background-image: linear-gradient(#19949b, #81f1f7);
+    display: flex;
+}
+
+#G {
+    background-image: url(../images/nintendo.png);
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    background-size: contain;
+}
+
+.logo {
+    align-self: center;
+}
+
+.switch {
+    background-image: url(../images/nintendo.png);
+}
+
+#H {
+    background-image: url(../images/lightpattern.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+#I {
+    grid-column: 3 / span 2;
+    grid-row: 4;
+    background-image: linear-gradient(#78c9af, #ACCFC4);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.imageleft>img {
+    object-fit: contain;
+    width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #wrapper section {
+        min-height: 400px;
+    }
+
+    .center {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .horizontal {
+        text-align: center;
+    }
+
+    #D {
+        background-image: url(../images/leaf.png);
+        background-size: contain;
+    }
+}
